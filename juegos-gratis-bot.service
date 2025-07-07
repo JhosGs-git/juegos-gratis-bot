@@ -1,0 +1,18 @@
+[Unit]
+Description=Bot de Telegram para Juegos Gratis
+After=network.target
+
+[Service]
+Type=simple
+User=jhosgs
+WorkingDirectory=/home/jhosgs/Escritorio/Bot telegram/juegos-gratis-bot
+ExecStart=/usr/bin/node dev-bot.js
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=juegos-gratis-bot
+
+[Install]
+WantedBy=multi-user.target

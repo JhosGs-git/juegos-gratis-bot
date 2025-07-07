@@ -1,0 +1,50 @@
+{
+  "name": "juegos-gratis-bot",
+  "version": "1.0.0",
+  "description": "Bot de Telegram que notifica sobre juegos gratis disponibles en Epic Games, Steam y otras plataformas",
+  "main": "dev-bot.js",
+  "scripts": {
+    "start": "node prod-bot.js",
+    "dev": "node dev-bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop juegos-gratis-bot",
+    "pm2:restart": "pm2 restart juegos-gratis-bot",
+    "pm2:logs": "pm2 logs juegos-gratis-bot",
+    "pm2:status": "pm2 status",
+    "pm2:delete": "pm2 delete juegos-gratis-bot",
+    "keep-alive": "./keep-alive.sh"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "juegos",
+    "gratis",
+    "free",
+    "games",
+    "epic",
+    "steam",
+    "notificaciones",
+    "gaming",
+    "ofertas"
+  ],
+  "author": "Comunidad Open Source",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TU_USUARIO/juegos-gratis-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TU_USUARIO/juegos-gratis-bot/issues"
+  },
+  "homepage": "https://github.com/TU_USUARIO/juegos-gratis-bot#readme",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-cron": "^4.2.0",
+    "telegraf": "^4.11.2"
+  }
+}
