@@ -187,7 +187,6 @@ Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) pa
 
 Si tienes preguntas sobre el proyecto, puedes:
 - Abrir un issue en GitHub
-- Contactar al desarrollador: [TU_CONTACTO]
 
 ---
 
